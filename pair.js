@@ -51,7 +51,7 @@ router.get('/', async (req, res) => {
 				const sockses = await sock.sendMessage(sock.user.id, { document: sessionsock, mimetype: `application/json`, fileName: `creds.json` });
 				
                
-				await sock.sendMessage(sock.user.id, { text: `*THE session id generated successfully *\n*you have used pairing method*\n> YOU HAVE SUCCESSFULLY COMPLETED YOUR FIRST STEP\n> NOW UPLOAD YOUR CREDS.JSON ON YOUR FORKED BOT GITHUB REPO\n____________________________________\n╔═════◇\n║ ❒ whatsapp channel: _https://whatsapp.com/channel/0029VajcRr0GpLHR6PjdgN3N_\\n║\n╚════════════════════╝ \n*prince/opaks™*\n___________________________________` }, {quoted: sockses});
+				await sock.sendMessage(sock.user.id, { text: `*THE session id generated successfully *\n*you have used pairing method*\n> YOU HAVE SUCCESSFULLY COMPLETED YOUR FIRST STEP\n> NOW UPLOAD YOUR CREDS.JSON ON YOUR FORKED BOT GITHUB REPO\n____________________________________\n╔═════◇\n║ ❒ whatsapp channel: _https://whatsapp.com/channel/0029VajYjMJJf05aRQXKx82W_\\n║\n╚════════════════════╝ \n*opaksfire🔥™*\n___________________________________` }, {quoted: sockses});
         await delay(100);
         return await removeFile('./session');
         process.exit(0)
